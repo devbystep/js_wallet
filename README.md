@@ -23,3 +23,13 @@ JS Wallet API is available on /api:
 * _/api/transactions:GET_ - returns all transactions
 * _/api/transactions/{id}_ - returns transaction with the given id(WIP)
 * _/api/transactions:POST_ - add transaction
+
+
+##TODO
+
+* add value to transaction
+* add type of transaction
+* make pretty look to show transaction
+* login by passport.js
+* binding transaction with map location
+* Deploy to heroku or other node.js supported free hosting
