@@ -12,7 +12,7 @@ var mongoose   = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/js_wallet'); // connect to our database
 var Transaction = require('./models/transaction');
 
-app.use("/", express.static('public')); //work with static files from puboic
+app.use("/", express.static('public')); //work with static files from public
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
@@ -34,10 +34,10 @@ router.get('/', function(req, res) {
 router.route('/transactions')
 	.post(function(req, res) {
         
-        var transaction = new Transaction();      // create a new instance of the Bear model
+        var transaction = new Transaction();      // create a new instance of the Transaction model
         console.log(req.body);
         transaction.name = req.body.name;  // set the  name (comes from the request)
-        transaction.description = req.body.description;  // set the  name (comes from the request)
+        transaction.description = req.body.description;  // set the  desctiption (comes from the request)
 
         // save the transaction and check for errors
         transaction.save(function(err) {
