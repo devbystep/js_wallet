@@ -1,5 +1,7 @@
 # JS Wallet #
 
+Develompment version is available on [http://jswallet.herokuapp.com/](http://jswallet.herokuapp.com/)
+
 ##To start server##
 
 * install mongodb
